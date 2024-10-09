@@ -8,7 +8,7 @@ async function getReports() {
 	return Promise.resolve(
 		Array.from({ length: 1 }).map((_, i) => ({
 			id: i,
-			data: `[${new Date().toLocaleTimeString('pt-BR')}] Report ${i}`
+			data: `${Date.now()} Report ${i}`,
 		}))
 	)
 }
@@ -28,7 +28,7 @@ export default async function ReportPage({ params }: { params: { id: string } })
 
 	return (
 		<>
-			<pre>{JSON.stringify({ data })}</pre>
+			<div>{JSON.stringify({ data })}</div>
 
 			<ul style={{ display: 'grid', maxWidth: '200px', margin: '10px auto', gap: '8px' }}>
 				{reports.map((report) => (

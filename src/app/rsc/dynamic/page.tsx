@@ -5,9 +5,11 @@ export const dynamic = 'force-dynamic'
 
 export default function Page() {
 	return (
-		<Suspense fallback="Loading..">
-			{/* @ts-expect-error */}
-			<RscNotCached />
-		</Suspense>
+		<section>
+			<h1>RSC Dynamic</h1>
+			<Suspense fallback="Loading..">
+				<RscNotCached />
+			</Suspense>
+		</section>
 	)
 }

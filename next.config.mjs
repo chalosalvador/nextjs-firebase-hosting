@@ -6,18 +6,18 @@ import rewrites from './rewrites.js'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ['images.unsplash.com']
+		domains: ['images.unsplash.com'],
 	},
 
 	experimental: {
-		ppr: true
+		ppr: true,
 	},
 
 	eslint: {
-		ignoreDuringBuilds: true
+		ignoreDuringBuilds: true,
 	},
 
-	rewrites: async () => [{ source: '/monogram', destination: 'https://monogram.io' }, ...rewrites]
+	rewrites: async () => [{ source: '/monogram', destination: 'https://monogram.io' }, ...rewrites],
 }
 
 export default nextConfig

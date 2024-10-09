@@ -9,18 +9,16 @@ export default function Page() {
 				display: 'flex',
 				flexDirection: 'column',
 				flexGrow: '1',
-				gap: '1rem'
+				gap: '1rem',
 			}}
 		>
 			<h1>static!</h1>
 
 			<Suspense fallback="Loading facts API...">
-				{/* @ts-expect-error */}
 				<RscNotCached />
 			</Suspense>
 
 			<Suspense fallback="Waiting for timeout..">
-				{/* @ts-expect-error */}
 				<TimeoutComponent />
 			</Suspense>
 

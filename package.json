@@ -1,32 +1,32 @@
 {
-  "name": "nextjs-firebase-issue",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "prebuild": "npm run pages-json",
-    "pages-json": "tsx ./scripts/pages-json.ts",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "^15.0.0-canary.112",
-    "react": "^19.0.0-rc-187dd6a7-20240806",
-    "react-dom": "^19.0.0-rc-187dd6a7-20240806",
-    "sharp": "^0.33.4"
-  },
-  "prettier": "@monogram/prettier-config",
-  "devDependencies": {
-    "@monogram/eslint-config": "^0.1.4",
-    "@monogram/prettier-config": "^0.2.0",
-    "@types/node": "20.2.5",
-    "@types/react": "18.2.7",
-    "@types/react-dom": "18.2.4",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.0.0",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.17.0",
-    "typescript": "^5.3.3"
-  }
+	"name": "nextjs-firebase-issue",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"prebuild": "npm run pages-json",
+		"pages-json": "tsx ./scripts/pages-json.ts",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"next": "^15.0.0-rc.0",
+		"react": "^19.0.0-rc-4f604941-20240830",
+		"react-dom": "^19.0.0-rc-4f604941-20240830",
+		"sharp": "^0.33.4"
+	},
+	"prettier": "@monogram/prettier-config",
+	"devDependencies": {
+		"@monogram/eslint-config": "^0.1.5",
+		"@monogram/prettier-config": "^0.3.4",
+		"@types/node": "20.12.7",
+		"@types/react": "18.2.79",
+		"@types/react-dom": "18.2.25",
+		"eslint": "^8.56.0",
+		"eslint-config-next": "14.3.0-canary.33",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.17.0",
+		"typescript": "^5.4.5"
+	}
 }

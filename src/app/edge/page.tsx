@@ -13,7 +13,6 @@ export default async function Page() {
 			<h1>~On the edge~</h1>
 
 			<Suspense fallback="Loading..">
-				{/* @ts-expect-error */}
 				<RscNotCached />
 			</Suspense>
 		</>
