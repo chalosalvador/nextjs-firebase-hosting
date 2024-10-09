@@ -12,8 +12,8 @@
 	},
 	"dependencies": {
 		"next": "^15.0.0-rc.0",
-		"react": "^19.0.0-rc-4f604941-20240830",
-		"react-dom": "^19.0.0-rc-4f604941-20240830",
+		"react": "^19.0.0-rc-ed966dac-20241007",
+		"react-dom": "^19.0.0-rc-ed966dac-20241007",
 		"sharp": "^0.33.4"
 	},
 	"prettier": "@monogram/prettier-config",
