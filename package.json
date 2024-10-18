@@ -4,16 +4,15 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"prebuild": "npm run pages-json",
 		"pages-json": "tsx ./scripts/pages-json.ts",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"next": "^15.0.0-rc.0",
-		"react": "^19.0.0-rc-ed966dac-20241007",
-		"react-dom": "^19.0.0-rc-ed966dac-20241007",
+		"next": "15.0.0-canary.197",
+		"react": "19.0.0-rc-77b637d6-20241016",
+		"react-dom": "19.0.0-rc-77b637d6-20241016",
 		"sharp": "^0.33.4"
 	},
 	"prettier": "@monogram/prettier-config",
