@@ -1,17 +1,16 @@
-import { Suspense } from 'react'
 import { TimeoutComponent } from '../../ppr/TimeoutComponent'
-import Loading from '../loading'
 
 type Props = {
-	searchParams: {
+	searchParams: Promise<{
 		a: string
-	}
+	}>
 }
-export default function Page({ searchParams }: Props) {
+export default async function Page({ searchParams }: Props) {
+	const { a } = await searchParams
 	return (
-		<Suspense fallback={<Loading />}>
-			{searchParams.a}
+		<>
+			{a}
 			<TimeoutComponent />
-		</Suspense>
+		</>
 	)
 }

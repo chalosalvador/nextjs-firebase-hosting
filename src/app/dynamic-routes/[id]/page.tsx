@@ -6,18 +6,19 @@ const staticIds = [1, 2, 3].map(String)
 
 export async function generateStaticParams() {
 	return staticIds.map((id) => ({
-		id
+		id,
 	}))
 }
 
-export default function Page({ params }: { params: { id: string } }) {
-	const staticGenerated = staticIds.includes(params.id)
+export default async function Page({ params }: { params: Promise<{ id: string }> }) {
+	const { id } = await params
+	const staticGenerated = staticIds.includes(id)
 
 	return (
 		<div
 			style={{
 				display: 'grid',
-				gap: '1rem'
+				gap: '1rem',
 			}}
 		>
 			<h1>Dynamic Route</h1>

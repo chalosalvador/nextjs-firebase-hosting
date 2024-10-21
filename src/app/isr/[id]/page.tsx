@@ -20,8 +20,9 @@ export async function generateStaticParams() {
 	return (await getReports()).map(({ id }) => ({ params: { id } }))
 }
 
-export default async function ReportPage({ params }: { params: { id: string } }) {
-	const { data } = (await findReport(params.id)) || {}
+export default async function ReportPage({ params }: { params: Promise<{ id: string }> }) {
+	const { id } = await params
+	const { data } = (await findReport(id)) || {}
 	if (!data) return notFound()
 
 	const reports = await getReports()
