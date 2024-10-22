@@ -9,9 +9,10 @@ const nextConfig = {
 		domains: ['images.unsplash.com'],
 	},
 
-	// experimental: {
-	// 	ppr: true,
-	// },
+	experimental: {
+		// ppr: true,
+		serverActions: true,
+	},
 
 	eslint: {
 		ignoreDuringBuilds: true,
