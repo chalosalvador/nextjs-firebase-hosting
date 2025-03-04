@@ -9,10 +9,5 @@
     "frameworksBackend": {
       "region": "us-central1"
     }
-  },
-  "emulators": {
-    "hosting": {
-      "port": 5002
-    }
   }
 }
