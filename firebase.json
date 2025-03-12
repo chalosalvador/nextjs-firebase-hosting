@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "site",
+      "target": "fb-tools-dev-site",
       "source": ".",
       "ignore": [
         "firebase.json",
