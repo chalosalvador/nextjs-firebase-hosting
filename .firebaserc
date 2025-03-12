@@ -1,5 +1,13 @@
 {
-  "projects": {
-    "default": "fb-tools-dev"
-  }
+  "projects": {},
+  "targets": {
+    "fb-tools-dev": {
+      "hosting": {
+        "classic": [
+          "static-site-test"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

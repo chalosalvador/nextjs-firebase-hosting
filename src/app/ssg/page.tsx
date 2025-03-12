@@ -1,5 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "../page.module.css";
+
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
   return (
@@ -15,7 +17,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            TEST DEPLOY TWO Get started by editing <code>src/app/page.tsx</code>.
+            TEST DEPLOY DYNAMIC Get started by editing <code>src/app/page.tsx</code>.
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
