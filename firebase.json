@@ -1,8 +1,8 @@
 {
   "hosting": [
     {
-      "site": "static-site-test",
-      "public": "public",
+      "target": "site",
+      "source": ".",
       "ignore": [
         "firebase.json",
         "**/.*",

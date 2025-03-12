@@ -3,8 +3,8 @@
   "targets": {
     "fb-tools-dev": {
       "hosting": {
-        "classic": [
-          "static-site-test"
+        "site": [
+          "fb-tools-dev-site"
         ]
       }
     }
